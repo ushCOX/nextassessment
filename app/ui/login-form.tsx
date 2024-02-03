@@ -45,7 +45,7 @@ export default function LoginForm() {
       } else {
         setEmail(response?.email);
         alert('Welcome ' + response?.email);
-        router.push('/products');
+        router.push('/');
       }
     } catch (error: any) {
       alert(error.message);
