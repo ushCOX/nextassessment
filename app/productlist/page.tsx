@@ -38,9 +38,15 @@ export default function Page() {
 
   return (
     <main className="text-center">
-      <p className="text-xl">
+{/*       <p className="text-xl">
         <u className="pb-7  text-blue-900">Product List</u>
-      </p>
+      </p> */}
+      <nav className="px-4 py-4 bg-blue-800 text-white text-center">
+        <ul className="flex">
+            <li className="mx-2 cursor-pointer hover:text-blue-200">Home</li>
+            <li className="mx-2 cursor-pointer hover:text-blue-200">Category</li>
+        </ul>
+    </nav>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {products.map((item: { id: string; title: string; imageUrl: string }) => (
           <div key={item.id} className="bg-white p-4 shadow">
